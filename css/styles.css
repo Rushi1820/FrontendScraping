@@ -4,12 +4,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #878888;
+    background-color: #f3f4f4;
 }
 
 /* Header Styles */
 .header {
-    background-color: #d5d6d6;
+    background-color: #c8fafa;
     color: rgb(131, 126, 126);
     padding: 30px 0;
     text-align: center;
@@ -33,7 +33,7 @@ body {
 }
 
 .navbar nav a {
-    color: rgb(117, 116, 116);
+    color: rgb(116, 117, 117);
     text-decoration: none;
     font-weight: bold;
 }
@@ -49,7 +49,7 @@ body {
 
 /* 3D Effect and Styling for Showcase Boxes */
 .showcase-box {
-    background-color: #c1eaf5; /* Background color */
+    background-color: #cdf0fa; /* Background color */
     border: 4px solid #0c0c0c; /* Border color */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
@@ -120,8 +120,8 @@ body {
 }
 
 .job-item {
-    background-color: #ffffff;
-    color: #333;
+    background-color: #c6f4ff;
+    color: #333333;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
