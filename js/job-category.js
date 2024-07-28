@@ -2,6 +2,9 @@ async function fetchJobData(category) {
     let apiUrl;
 
     switch (category) {
+        case'internships':
+            apiUrl= 'https://rushiscraping.vercel.app/api/v1/getInternships'
+            break;
         case 'entry-level':
             apiUrl = 'https://rushiscraping.vercel.app/api/v1/getEntryLeveljobs';
             break;
