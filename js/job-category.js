@@ -3,13 +3,13 @@ async function fetchJobData(category) {
 
     switch (category) {
         case 'entry-level':
-            apiUrl = 'https://rushiscraping.onrender.com/api/v1/getEntryLeveljobs';
+            apiUrl = 'https://rushiscraping.vercel.app/api/v1/getEntryLeveljobs';
             break;
         case 'freshers':
-            apiUrl = 'https://rushiscraping.onrender.com/api/v1/getFresherjobs';
+            apiUrl = 'https://rushiscraping.vercel.app/api/v1/getFresherjobs';
             break;
         case 'experienced':
-            apiUrl = 'https://rushiscraping.onrender.com/api/v1/getExperiencedjobs';
+            apiUrl = 'https://rushiscraping.vercel.app/api/v1/getExperiencedjobs';
             break;
         default:
             console.error('Invalid category:', category);

@@ -9,7 +9,7 @@ body {
 
 /* Header Styles */
 .header {
-    background-color: #350590;
+    background-color: #4747f7;
     color: white;
     padding: 30px 0;
     text-align: center;
@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #041888;
+    background-color: #0a038f;
     padding: 10px 20px;
 }
 
@@ -44,18 +44,18 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 160px;
-    background-color: #ecf0f1;
+    background-color: #dafaee;
 }
 
 /* 3D Effect and Styling for Showcase Boxes */
 .showcase-box {
-    background-color: #09c6eb; /* Background color */
-    border: 4px solid #a3a2a2; /* Border color */
+    background-color: #c1eaf5; /* Background color */
+    border: 4px solid #0c0c0c; /* Border color */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
     padding: 55px; /* Padding inside the box */
     margin: 12px; /* Margin around the box */
-    transition: all 0.9s ease; /* Smooth transition for hover effect */
+    transition: all 0.2s ease; /* Smooth transition for hover effect */
     text-align: center;
     font-size: 1.2em; /* Larger text size */
 }
@@ -72,19 +72,19 @@ body {
 
 /* Specific Showcase Box Colors */
 .internships {
-    background-color: #4be6f7;
+    background-color: #d5d6d6;
 }
 .entry-level {
-    background-color: #4cfcf6;
+    background-color: #d5d6d6;
 }
 .freshers {
-    background-color: #67c1fd;
+    background-color: #d5d6d6;
 }
 .experienced {
-    background-color: #74cbfd;
+    background-color: #d5d6d6;
 }
 .free-certificates {
-    background-color: #46f1fd;
+    background-color: #d5d6d6;
 }
 
 /* Notice Box Animation */
