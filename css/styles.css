@@ -4,13 +4,13 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f1f9f8;
+    background-color: #878888;
 }
 
 /* Header Styles */
 .header {
-    background-color: #4747f7;
-    color: white;
+    background-color: #d5d6d6;
+    color: rgb(131, 126, 126);
     padding: 30px 0;
     text-align: center;
 }
@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0a038f;
+    background-color: #d5d6d6;
     padding: 10px 20px;
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 .navbar nav a {
-    color: white;
+    color: rgb(117, 116, 116);
     text-decoration: none;
     font-weight: bold;
 }
@@ -44,7 +44,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 160px;
-    background-color: #dafaee;
+    background-color: #3A5053;
 }
 
 /* 3D Effect and Styling for Showcase Boxes */
@@ -383,3 +383,4 @@ footer {
 .job-details p {
     margin-bottom: 5px;
 }
+
