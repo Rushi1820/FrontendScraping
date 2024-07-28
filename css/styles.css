@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f3f4f4;
+    background-color: #e4f9f9;
 }
 
 /* Header Styles */
@@ -120,7 +120,7 @@ body {
 }
 
 .job-item {
-    background-color: #c6f4ff;
+    background-color: #e2e3e3;
     color: #333333;
     padding: 10px;
     margin: 10px 0;

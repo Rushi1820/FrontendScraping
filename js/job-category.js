@@ -2,8 +2,8 @@ async function fetchJobData(category) {
     let apiUrl;
 
     switch (category) {
-        case'internships':
-            apiUrl= 'https://rushiscraping.vercel.app/api/v1/getInternships'
+        case 'internships':
+            apiUrl = 'https://rushiscraping.vercel.app/api/v1/getInternships';
             break;
         case 'entry-level':
             apiUrl = 'https://rushiscraping.vercel.app/api/v1/getEntryLeveljobs';
@@ -43,6 +43,7 @@ function createJobItem(job) {
     jobItem.innerHTML = `
         <h3>${job.title}</h3>
         <p>${job.company}</p>
+        <span>${job.location}</span>
         <span>${job.posted_on}</span>
     `;
     jobItem.onclick = () => {
@@ -71,12 +72,22 @@ async function showJobList(category) {
         jobListSection.appendChild(jobItem);
     });
 
-    // Add event listener for the search button
-    document.getElementById('searchButton').onclick = () => {
-        const searchQuery = document.getElementById('searchInput').value.toLowerCase();
+    // Add event listener for the search button and 'Enter' key
+    const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton');
+    const locationFilter = document.getElementById('locationFilter');
+    const dateFilter = document.getElementById('dateFilter');
+
+    const filterJobs = () => {
+        const searchQuery = searchInput.value.toLowerCase();
+        const locationQuery = locationFilter.value.toLowerCase();
+        const dateQuery = dateFilter.value.toLowerCase();
+
         const filteredJobs = jobs.filter(job => 
-            job.title.toLowerCase().includes(searchQuery) || 
-            job.company.toLowerCase().includes(searchQuery)
+            (job.title.toLowerCase().includes(searchQuery) || 
+             job.company.toLowerCase().includes(searchQuery)) &&
+            (locationQuery === '' || job.location.toLowerCase().includes(locationQuery)) &&
+            (dateQuery === '' || job.posted_on.toLowerCase().includes(dateQuery))
         );
 
         jobListSection.innerHTML = ''; // Clear previous content
@@ -90,6 +101,15 @@ async function showJobList(category) {
             jobListSection.appendChild(jobItem);
         });
     };
+
+    searchButton.onclick = filterJobs;
+    searchInput.onkeypress = (e) => {
+        if (e.key === 'Enter') {
+            filterJobs();
+        }
+    };
+    locationFilter.oninput = filterJobs;
+    dateFilter.oninput = filterJobs;
 }
 
 function init() {

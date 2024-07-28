@@ -23,10 +23,16 @@
     </header>
     <main>
         <section id="job-list-section" class="job-list-section">
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Search for jobs...">
+            <div>
+                <input type="text" id="searchInput" placeholder="Search by job title or company">
                 <button id="searchButton">Search</button>
             </div>
+            <div>
+                <input type="text" id="locationFilter" placeholder="Filter by location">
+                <input type="text" id="dateFilter" placeholder="Filter by posted date">
+            </div>
+            <div id="job-list"></div>
+            
             <div id="job-list" class="job-list"></div>
         </section>
     </main>
