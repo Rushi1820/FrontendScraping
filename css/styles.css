@@ -1,0 +1,280 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1f9f8;
+}
+
+/* Header Styles */
+.header {
+    background-color: #350590;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #041888;
+    padding: 10px 20px;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Showcase Section Styles */
+.showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 160px;
+    background-color: #ecf0f1;
+}
+
+/* 3D Effect and Styling for Showcase Boxes */
+.showcase-box {
+    background-color: #09c6eb; /* Background color */
+    border: 4px solid #a3a2a2; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
+    padding: 55px; /* Padding inside the box */
+    margin: 12px; /* Margin around the box */
+    transition: all 0.9s ease; /* Smooth transition for hover effect */
+    text-align: center;
+    font-size: 1.2em; /* Larger text size */
+}
+
+.showcase-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Lift the box slightly on hover */
+}
+
+.showcase-box h2 {
+    margin: 0; /* Remove default margin */
+    color: #333; /* Dark text color */
+}
+
+/* Specific Showcase Box Colors */
+.internships {
+    background-color: #4be6f7;
+}
+.entry-level {
+    background-color: #4cfcf6;
+}
+.freshers {
+    background-color: #67c1fd;
+}
+.experienced {
+    background-color: #74cbfd;
+}
+.free-certificates {
+    background-color: #46f1fd;
+}
+
+/* Notice Box Animation */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.notice-box {
+    background-color: #f0aadd;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+    animation: blink 1s step-start infinite;
+}
+
+/* Job List Section Styles */
+.job-list-section {
+    padding: 20px;
+}
+
+.job-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.job-item {
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.job-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Existing styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+}
+
+/* Existing styles */
+
+/* Flexbox layout to ensure footer is at the bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+}
+
+/* Search container styles */
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+}
