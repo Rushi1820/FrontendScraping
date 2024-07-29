@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const title = urlParams.get('title');
     const company = urlParams.get('company');
     const description = urlParams.get('description');
-    const experience = urlParams.get('experience');
+    const experience = urlParams.get('years_of_experience');
     const location = urlParams.get('location');
     const postedOn = urlParams.get('posted_on');
     const jobLink = urlParams.get('job_link');  // Assuming the job link is passed as a query parameter
